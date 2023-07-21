@@ -38,7 +38,7 @@ def audio_transcription_chunks(path, seconds=10):
 			print(chunkFilename, ":", text)
 			wholeText += text
 
-	return wholeText
+	return wholeText 
 
 path = "samples/output1/call_1_test1.wav"
 #path = sys.argv[1]

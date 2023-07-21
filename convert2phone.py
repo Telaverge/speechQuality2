@@ -23,7 +23,7 @@ def convert_to_phone(file, directory, outputt):
 	stft = librosa.core.stft(y=resampledTimeSeries)
 	
 	stft[:SPEECH_LOW_BAND] = 0
-	stft[SPEECH_UPPER_BAND: len(stft)] = 0 #bandstop filter
+	stft[SPEECH_UPPER_BAND: len(stft)] = 0 #bandstop filter 
 
 	reconstructedTimeSeries = librosa.core.istft(stft)
 	
